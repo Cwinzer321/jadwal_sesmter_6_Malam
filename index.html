@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jadwal Kampus</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <span class="icon">📅</span>
+                <h1>Jadwal<span><br>Semester 6</span></h1>
+            </div>
+            <nav class="nav-menu">
+                <button class="nav-item active" data-day="all">
+                    <span class="icon">🏠</span>
+                    <span>Semua Hari</span>
+                </button>
+                <button class="nav-item" data-day="Monday">
+                    <span class="icon">M</span>
+                    <span>Senin</span>
+                </button>
+                <button class="nav-item" data-day="Tuesday">
+                    <span class="icon">T</span>
+                    <span>Selasa</span>
+                </button>
+                <button class="nav-item" data-day="Wednesday">
+                    <span class="icon">W</span>
+                    <span>Rabu</span>
+                </button>
+                <button class="nav-item" data-day="Thursday">
+                    <span class="icon">T</span>
+                    <span>Kamis</span>
+                </button>
+                <button class="nav-item" data-day="Friday">
+                    <span class="icon">F</span>
+                    <span>Jumat</span>
+                </button>
+                <button class="nav-item" data-day="Saturday">
+                    <span class="icon">S</span>
+                    <span>Sabtu</span>
+                </button>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header class="top-header">
+                <div class="header-info">
+                    <h2 id="current-day">Loading...</h2>
+                    <p id="current-date">Fetching date...</p>
+                </div>
+                <div class="status-badge" id="next-class-badge">
+                    Next: <span id="next-class-name">Calculating...</span>
+                </div>
+            </header>
+
+            <section class="schedule-section">
+                <div class="section-title">
+                    <h3>Jadwal Mata Kuliah</h3>
+                    <div class="schedule-filters">
+                        <span class="filter-label">Urutkan: </span>
+                        <select id="sort-filter">
+                            <option value="time">Waktu</option>
+                            <option value="subject">Mata Kuliah</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="schedule-grid" id="schedule-container">
+                    <!-- Schedule Items will be injected here -->
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
