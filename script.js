@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const dayHeading = document.getElementById('current-day');
     const dateHeading = document.getElementById('current-date');
     const nextClassName = document.getElementById('next-class-name');
+    const totalMatkulBadge = document.getElementById('total-matkul-badge');
 
     // Update Date & Day
     const updateDateTime = () => {
@@ -36,6 +37,12 @@ document.addEventListener('DOMContentLoaded', () => {
         const filtered = filterDay === 'all'
             ? scheduleData
             : scheduleData.filter(item => item.day === filterDay);
+
+        // Update Total Count (Unique Subjects Only)
+        if (totalMatkulBadge) {
+            const uniqueSubjects = new Set(filtered.map(item => item.subject));
+            totalMatkulBadge.textContent = uniqueSubjects.size;
+        }
 
         filtered.forEach((item, index) => {
             const card = document.createElement('div');

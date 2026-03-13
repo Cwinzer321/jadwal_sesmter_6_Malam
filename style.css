@@ -145,6 +145,19 @@ body {
 .section-title h3 {
     font-size: 1.5rem;
     color: var(--text-main);
+    display: flex;
+    align-items: center;
+}
+
+.count-badge {
+    background: var(--glass);
+    border: 1px solid var(--glass-border);
+    color: var(--primary-light);
+    font-size: 0.85rem;
+    padding: 0.2rem 0.6rem;
+    border-radius: 8px;
+    margin-left: 0.75rem;
+    font-weight: 700;
 }
 
 .schedule-grid {
