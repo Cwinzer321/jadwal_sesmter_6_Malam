@@ -1,6 +1,6 @@
 const scheduleData = [
-    { day: "Senin", subject: "Technopreneur", time: "18.30 - 20:10", room: "Unknow floor", lecturer: "Muhammad Jembar Jomantara" },
-    { day: "Senin", subject: "Technopreneur", time: "20:20 - 22:00", room: "Unknow floor", lecturer: "Muhammad Jembar Jomantara" },
+    { day: "Senin", subject: "Technopreneur", time: "18.30 - 20:10", room: "204 - 2nd Floor", lecturer: "Muhammad Jembar Jomantara" },
+    { day: "Senin", subject: "Technopreneur", time: "20:20 - 22:00", room: "204 - 2nd Floor", lecturer: "Muhammad Jembar Jomantara" },
     { day: "Selasa", subject: "Sistem Operasi", time: "18.30 - 20:10", room: "201 - 2nd Floor", lecturer: "Ahmad Mubarok" },
     { day: "Selasa", subject: "Sistem Operasi", time: "20:20 - 22:00", room: "Lab Computer 1 -3rd Floor", lecturer: "Ahmad Mubarok" },
     // { day: "Rabu", subject: "Proyek Jaringan", time: "09.00 - 12:20", room: "302 - 3rd floor", lecturer: "Deden Moh Alfiansyah" },
